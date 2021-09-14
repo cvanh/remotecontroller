@@ -70,6 +70,26 @@
     text-align: center;
 }
 
+#ButtonStart{
+    position: absolute;
+    background-color: rgb(112, 110, 110);
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 265px;
+}
+
+#ButtonSelect{
+    position: absolute;
+    background-color: rgb(112, 110, 110);
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
 .WhiteBox{
     position:absolute;
     width: 100px;
@@ -90,6 +110,15 @@
     margin-top: 230px;
     border-radius: 10px;
     padding: 5px;
+}
+
+.WhiteBoxC{
+    background-color: white;
+    width: 400px;
+    height: 112px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 380px;
 }
 
 .RedDot{
