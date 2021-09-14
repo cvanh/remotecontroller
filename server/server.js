@@ -1,11 +1,14 @@
 const WebSocket = require("ws");
 const robot = require("robotjs");
+const { stringify } = require("querystring");
 
 const wss = new WebSocket.Server({
   port: 7072,
 });
 
-require("events").EventEmitter.defaultMaxListeners = 15;
+require("events").EventEmitter.defaultMaxListeners = 4;
+
+
 
 const clients = new Map();
 
@@ -15,7 +18,7 @@ wss.on("connection", (ws) => {
   ws.on("message", (t) => {
     const data = JSON.parse(t)
     console.log(`${data.input} has been pressed`)
-    robot.typeString(data.input); // type the input
+    // robot.typeString(data.input); // type the input
 
   });
   ws.on("close", () => {
