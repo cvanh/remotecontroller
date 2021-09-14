@@ -4,12 +4,15 @@ play games together remote from 1000's of miles.
 # todo
 server
 [] server side check if player number is unused
-[] 
+[] unfuck the giant ass switch statement fucking gore mess 
+[] fix that the sliders activates the slider event
+
 
 client
 [] make css controller
 [x] make a button event
 [] on keydown make it send all the buttons via ws
+[] make it so you can see the current player number
 
 ### setting it up
 
