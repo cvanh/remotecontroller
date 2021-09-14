@@ -27,13 +27,17 @@ const ButtonDown = document.getElementById('ButtonDown');
 const ButtonLeft = document.getElementById('ButtonLeft');
 const ButtonRight = document.getElementById('ButtonRight');
 const Button = document.querySelectorAll(".Button");
+const player = 3
 
 for (let i = 0; i < Button.length; i++) {
     Button[i].addEventListener("mousedown", (e) => {
-    console.log(Button[i].id)
+        console.log(Button[i].id)
 
-    const WsData = {"input":Button[i].id}
-    console.log(WsData)
-    ws.send(JSON.stringify(WsData))
+        const WsData = {
+            "player": player,
+            "input": Button[i].id
+        }
+        console.log(WsData)
+        ws.send(JSON.stringify(WsData))
     });
 };

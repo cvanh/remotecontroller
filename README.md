@@ -3,6 +3,7 @@ play games together remote from 1000's of miles.
 
 # todo
 server
+[] server side check if player number is unused
 [] 
 
 client
