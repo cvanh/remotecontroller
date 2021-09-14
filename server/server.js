@@ -1,4 +1,3 @@
-const { stringify } = require("querystring");
 const WebSocket = require("ws");
 const robot = require("robotjs");
 
