@@ -11,18 +11,29 @@ dpad right
 
 */
 
+ws = new WebSocket('ws://localhost:7072');
+
 // the right 2 buttons
 const ButtonA = document.getElementById('ButtonA')
 const ButtonB = document.getElementById('ButtonB')
 
 // the middle buttons
-const ButtonStart = document.getElementById('ButtonStart')
-const ButtonSelect = document.getElementById('ButtonSelect')
+const ButtonStart = document.getElementById('ButtonStart');
+const ButtonSelect = document.getElementById('ButtonSelect');
 
 // dpad 
-const ButtonUp = document.getElementById('ButtonUp')
-const ButtonDown = document.getElementById('ButtonDown')
-const ButtonLeft = document.getElementById('ButtonLeft')
-const ButtonRight = document.getElementById('ButtonRight')
+const ButtonUp = document.getElementById('ButtonUp');
+const ButtonDown = document.getElementById('ButtonDown');
+const ButtonLeft = document.getElementById('ButtonLeft');
+const ButtonRight = document.getElementById('ButtonRight');
+const Button = document.querySelectorAll(".Button");
 
-const ButtonAll = document.getElementsByClassName('Button')
+for (let i = 0; i < Button.length; i++) {
+    Button[i].addEventListener("mousedown", (e) => {
+    console.log(Button[i].id)
+
+    const WsData = {"input":Button[i].id}
+    console.log(WsData)
+    ws.send(JSON.stringify(WsData))
+    });
+};

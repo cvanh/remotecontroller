@@ -1,6 +1,15 @@
 # motivation
 play games together remote from 1000's of miles. 
 
+# todo
+server
+[] 
+
+client
+[] make css controller
+[x] make a button event
+[] on keydown make it send all the buttons via ws
+
 ### setting it up
 
 # server

@@ -4,7 +4,8 @@
 }
 
 #container{
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
 }
 
-#
