@@ -43,20 +43,23 @@
 #LightGray1{
     background-color: lightgray;
     width: 400px;
-    height: 65px;
+    height: 45px;
     border-radius: 25px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
     margin-left: 380px;
+    color: red;
+    padding-top: 20px;
 }
 
 #LightGray2{
     background-color: lightgray;
     width: 400px;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     margin-top: 12px;
     margin-left: 380px;
+    padding-top: 10px;
 }
 
 #LightGray3{
@@ -68,6 +71,12 @@
     margin-left: 380px;
     color: red;
     text-align: center;
+}
+
+#slider{
+    width: 300px;
+    margin-left: 50px;
+    background-color: red;
 }
 
 #ButtonStart{
@@ -88,6 +97,51 @@
     border-radius: 25px;
     margin-top: 40px;
     margin-left: 35px;
+}
+
+#ButtonUp{
+    margin: auto;
+    margin-top: 8px;
+    border: 1px black solid;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#GraySpace{
+    width: 70px;
+    height: 70px;
+    margin-left: 130px;
+    margin-top: -168px;
+    background-color: rgb(48, 48, 48);
+    border: 1px black solid;
+}
+
+#ButtonDown{
+    margin: auto;
+    margin-top: 8px;
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#ButtonLeft{
+    margin: auto;
+    margin-top: 8px;
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#ButtonRight{
+    margin: auto;
+    margin-top: 8px;
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 .WhiteBox{
@@ -131,3 +185,58 @@
     border: 1px black solid;
 }
 
+.GrayDot{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.GrayBox1{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 130px;
+    margin-top: -240px;
+    background-color: rgb(48, 48, 48);
+    border: 1px black solid;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.GrayBox2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 130px;
+    background-color: rgb(48, 48, 48);
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.GrayBox3{
+    width: 70px;
+    height: 70px;
+    margin-left: 58px;
+    margin-top: -72px;
+    background-color: rgb(48, 48, 48);
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.GrayBox4{
+    width: 70px;
+    height: 70px;
+    margin-left: 202px;
+    margin-top: -72px;
+    background-color: rgb(48, 48, 48);
+    border: 1px black solid;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
