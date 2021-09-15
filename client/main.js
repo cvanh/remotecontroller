@@ -11,8 +11,10 @@ dpad right
 
 */
 
-ws = new WebSocket('ws://localhost:7072');
+// change the ip to ther current network ip
+ws = new WebSocket('ws://192.168.2.33:7072');
 
+// declares all the button seems to break when not present
 // the right 2 buttons
 const ButtonA = document.getElementById('ButtonA')
 const ButtonB = document.getElementById('ButtonB')
@@ -30,6 +32,7 @@ const Button = document.querySelectorAll(".Button");
 
 const ButtonPlayerSelector = document.getElementById('slider')
 
+// add a event listner to all the elements with the class button and on click on such element make it send data
 for (let i = 0; i < Button.length; i++) {
     Button[i].addEventListener("mousedown", (e) => {
         console.log(parseInt(ButtonPlayerSelector.value) + 1)
@@ -37,7 +40,7 @@ for (let i = 0; i < Button.length; i++) {
             "player": parseInt(ButtonPlayerSelector.value) + 1,
             "input": Button[i].id
         }
-        console.log(WsData)
+        // console.log(JSON.stringify(WsData))
         ws.send(JSON.stringify(WsData))
     });
 };

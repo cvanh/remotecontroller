@@ -16,6 +16,8 @@ client
 
 ### setting it up
 
+in ./client/main.js change the websocket url to the current ip of the machine
+
 # server
 1. `cd server`
 2. Please ensure you have the required dependencies before installing:
@@ -44,7 +46,7 @@ node-gyp rebuild
 3. `npm i`
 4. `node server.js`
 
-#client 
-1. `cd client`
-2. `npm i`
-3. load the page in your browser of choice
+
+#wijze woorden
+mevrouw bosboom ik wil niet blijven zitten.
+dan gaan we er bij liggen!
