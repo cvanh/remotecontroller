@@ -1,10 +1,5 @@
 const robot = require("robotjs");
 
-
-/**
- * makes the keypresses 
- * @param {object} data ws connection 
- */
 // TODO please change this gore
 // function KeyboardEncoder(data) {
 //   // player 1
@@ -211,10 +206,20 @@ const keyboardbindings = {
     ButtonRight: '6'
   }
 }
+/**
+ * makes the keypresses 
+ * @param {object} data ws connection 
+ * @description warning uses eval
+ */
 
 function KeyboardEncoder(data){
-  const t = (keyboardbindings[data.player].) + data.input 
-  console.log()
+  const KeyToBePressed = eval('keyboardbindings[data.player].'+ data.input)
+  console.log(KeyToBePressed)
+
+  // the if makes shure there are valid keypresses
+  if(KeyToBePressed != undefined){
+  robot.keyTap(KeyToBePressed)
+  }
 }
 
 

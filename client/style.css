@@ -12,6 +12,8 @@
     background-color: rgb(242, 242, 242);
     border-radius: 30px;
     border: 1px black solid;
+
+    touch-action: manipulation
 }
 
 #GrayBox{
