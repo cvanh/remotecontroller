@@ -30,14 +30,11 @@ const Button = document.querySelectorAll(".Button");
 
 const ButtonPlayerSelector = document.getElementById('slider')
 
-
-
 for (let i = 0; i < Button.length; i++) {
     Button[i].addEventListener("mousedown", (e) => {
-        console.log(Button[i].id)
-
+        console.log(parseInt(ButtonPlayerSelector.value) + 1)
         const WsData = {
-            "player": ButtonPlayerSelector.value,
+            "player": parseInt(ButtonPlayerSelector.value) + 1,
             "input": Button[i].id
         }
         console.log(WsData)
