@@ -11,7 +11,7 @@ wss.on("connection", (ws) => {
   ws.on("message", (t) => {
     const data = JSON.parse(t)
     console.log(`player ${data.player} has pressed ${data.input}`)
-    KeyboardEncoder(data)
+    KeyboardEncoder(data) // makes the keyboard click
   });
 });
 
