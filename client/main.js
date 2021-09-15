@@ -12,6 +12,7 @@ dpad right
 */
 
 // change the ip to ther current network ip
+// TODO make this autofind
 ws = new WebSocket('ws://192.168.178.98:7072');
 
 // declares all the button seems to break when not present
