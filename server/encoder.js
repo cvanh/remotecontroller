@@ -14,6 +14,11 @@ const posInputs = {
 function encoder(data) {
   if (data && data.player) {
     console.log(`${data.player} pressed ${data.input}`);
+    Object.entries(posInputs).forEach((input) => {
+      if (input.includes(data.input)) {
+        robot.keyTap(input[1]);
+      }
+    });
   }
 }
 
