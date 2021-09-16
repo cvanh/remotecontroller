@@ -12,26 +12,26 @@ dpad right
 */
 
 // change the ip to ther current network ip
-ws = new WebSocket('ws://127.0.0.1:7072');
+ws = new WebSocket("ws://192.168.68.114:7072");
 
 // declares all the button seems to break when not present
 // the right 2 buttons
-const ButtonA = document.getElementById('ButtonA')
-const ButtonB = document.getElementById('ButtonB')
+const ButtonA = document.getElementById("ButtonA");
+const ButtonB = document.getElementById("ButtonB");
 
 // the middle buttons
-const ButtonStart = document.getElementById('ButtonStart');
-const ButtonSelect = document.getElementById('ButtonSelect');
+const ButtonStart = document.getElementById("ButtonStart");
+const ButtonSelect = document.getElementById("ButtonSelect");
 
-// dpad 
-const ButtonUp = document.getElementById('ButtonUp');
-const ButtonDown = document.getElementById('ButtonDown');
-const ButtonLeft = document.getElementById('ButtonLeft');
-const ButtonRight = document.getElementById('ButtonRight');
+// dpad
+const ButtonUp = document.getElementById("ButtonUp");
+const ButtonDown = document.getElementById("ButtonDown");
+const ButtonLeft = document.getElementById("ButtonLeft");
+const ButtonRight = document.getElementById("ButtonRight");
 
 const Button = document.querySelectorAll(".Button");
 
-const ButtonPlayerSelector = document.getElementById('slider')
+const ButtonPlayerSelector = document.getElementById("slider");
 
 // add a event listner to all the elements with the class button and on click on such element make it send data
 // for (let i = 0; i < Button.length; i++) {
@@ -47,13 +47,13 @@ const ButtonPlayerSelector = document.getElementById('slider')
 // };
 
 for (let i = 0; i < Button.length; i++) {
-	Button[i].addEventListener("click", (e) => {
-		let player = parseInt(ButtonPlayerSelector.value) + 1;
-		console.log(player);
-		const wsData = {
-			"player": player,
-			"input": Button[i].id
-		}
-		ws.send(JSON.stringify(wsData));
-	});
-};
+  Button[i].addEventListener("click", (e) => {
+    let player = parseInt(ButtonPlayerSelector.value) + 1;
+    console.log(player);
+    const wsData = {
+      player: player,
+      input: Button[i].id,
+    };
+    ws.send(JSON.stringify(wsData));
+  });
+}
