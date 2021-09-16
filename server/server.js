@@ -1,18 +1,22 @@
+// imports
 const WebSocket = require("ws");
-const {KeyboardEncoder} = require('./utils')
+const { encoder } = require("./encoder");
+
+// server configuration
+const port = 7072;
 
 const wss = new WebSocket.Server({
-  port: 7072,
+  port: port,
 });
 
+// wss listener
 require("events").EventEmitter.defaultMaxListeners = 4;
 
 wss.on("connection", (ws) => {
-  ws.on("message", (t) => {
-    const data = JSON.parse(t)
-    console.log(`player ${data.player} has pressed ${data.input}`)
-    KeyboardEncoder(data) // makes the keyboard click
+  ws.on("message", (event) => {
+    const data = JSON.parse(event);
+    encoder(data);
   });
 });
 
-console.log('wss server started on port 7072')
+console.log(`wss server started on port: ${port}`);
