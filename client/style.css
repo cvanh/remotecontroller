@@ -1,565 +1,560 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-#Container{
-    max-width: 1280px;
-    width: 100%;
-    height: 560px;
+#Container {
+  max-width: 1280px;
+  width: 100%;
+  height: 560px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 30px;
+  border: 1px black solid;
+  touch-action: manipulation;
+}
+
+#GrayBox {
+  max-width: 1180px;
+  width: 100%;
+  max-height: 420px;
+  height: 100%;
+  margin-left: 50px;
+  margin-top: 100px;
+  border-radius: 30px;
+  background-color: rgb(112, 110, 110);
+}
+
+#ButtonA {
+  max-width: 100%;
+  margin: auto;
+  margin-left: 29px;
+  margin-top: 18px;
+  font-size: 30px;
+}
+
+#ButtonB {
+  max-width: 100%;
+  margin: auto;
+  margin-left: 29px;
+  margin-top: 18px;
+  font-size: 30px;
+}
+
+#LightGray1 {
+  background-color: lightgray;
+  max-width: 400px;
+  width: 100%;
+  max-height: 45px;
+  height: 100%;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-left: 380px;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#LightGray2 {
+  background-color: lightgray;
+  max-width: 400px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 12px;
+  margin-left: 380px;
+  padding-top: 10px;
+}
+
+#LightGray3 {
+  background-color: lightgray;
+  max-width: 400px;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 12px;
+  margin-left: 380px;
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+
+#slider {
+  max-width: 300px;
+  width: 100%;
+  margin-left: 50px;
+  background-color: red;
+}
+
+#ButtonStart {
+  position: absolute;
+  background-color: rgb(112, 110, 110);
+  max-width: 100px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-left: 265px;
+}
+
+#ButtonSelect {
+  position: absolute;
+  background-color: rgb(112, 110, 110);
+  max-width: 100px;
+  width: 100%;
+  max-height: 30px;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-left: 35px;
+}
+
+#ButtonUp {
+  margin: auto;
+  margin-top: 8px;
+  border: 1px black solid;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#GraySpace {
+  max-width: 70px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+  margin-left: 130px;
+  margin-top: -168px;
+  background-color: rgb(48, 48, 48);
+  border: 1px black solid;
+}
+
+#ButtonDown {
+  margin: auto;
+  margin-top: 8px;
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#ButtonLeft {
+  margin: auto;
+  margin-top: 8px;
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#ButtonRight {
+  margin: auto;
+  margin-top: 8px;
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.WhiteBox {
+  position: absolute;
+  max-width: 100px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  background-color: white;
+  margin-left: 1000px;
+  margin-top: 230px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.WhiteBoxB {
+  position: absolute;
+  max-width: 100px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  background-color: white;
+  margin-left: 860px;
+  margin-top: 230px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.WhiteBoxC {
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+  max-height: 112px;
+  height: 100%;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-left: 380px;
+}
+
+.RedDot {
+  max-width: 80px;
+  width: 100%;
+  max-height: 80px;
+  height: 100%;
+  margin-left: 8.5px;
+  margin-top: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px black solid;
+}
+
+.GrayDot {
+  max-width: 50px;
+  width: 100%;
+  max-height: 50px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.GrayBox1 {
+  position: absolute;
+  max-width: 70px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+  margin-left: 130px;
+  margin-top: -240px;
+  background-color: rgb(48, 48, 48);
+  border: 1px black solid;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.GrayBox2 {
+  position: absolute;
+  max-width: 70px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+  margin-left: 130px;
+  background-color: rgb(48, 48, 48);
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.GrayBox3 {
+  max-width: 70px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+  margin-left: 58px;
+  margin-top: -72px;
+  background-color: rgb(48, 48, 48);
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.GrayBox4 {
+  max-width: 70px;
+  width: 100%;
+  max-height: 70px;
+  height: 100%;
+  margin-left: 202px;
+  margin-top: -72px;
+  background-color: rgb(48, 48, 48);
+  border: 1px black solid;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+@media screen and (max-width: 1280px) {
+  * {
+    max-width: 375px;
+    padding: 0px;
     margin: auto;
     margin-top: 20px;
+  }
+
+  #Container {
+    max-width: 355px;
+    width: 100%;
+    height: 160px;
+    margin: auto;
+    margin-left: auto;
     background-color: rgb(242, 242, 242);
     border-radius: 30px;
     border: 1px black solid;
-    touch-action: manipulation
-}
+    touch-action: manipulation;
+  }
 
-#GrayBox{
-    max-width: 1180px;
+  #GrayBox {
+    max-width: 320px;
     width: 100%;
-    max-height: 420px;
+    max-height: 110px;
     height: 100%;
-    margin-left: 50px;
-    margin-top: 100px;
+    margin-left: 17.5px;
+    margin-top: 40px;
     border-radius: 30px;
     background-color: rgb(112, 110, 110);
-}
+  }
 
-#ButtonA{
+  #ButtonA {
     max-width: 100%;
     margin: auto;
-    margin-left: 29px;
-    margin-top: 18px;
-    font-size: 30px;
-}
+    margin-left: 4.5px;
+    margin-top: 0px;
+    font-size: 15px;
+  }
 
-#ButtonB{
+  #ButtonB {
     max-width: 100%;
     margin: auto;
-    margin-left: 29px;
-    margin-top: 18px;
-    font-size: 30px;
-}
+    margin-left: 4.5px;
+    margin-top: 0px;
+    font-size: 15px;
+  }
 
-#LightGray1{
+  #LightGray1 {
     background-color: lightgray;
-    max-width: 400px;
+    max-width: 120px;
     width: 100%;
-    max-height: 45px;
+    max-height: 10px;
     height: 100%;
     border-radius: 25px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-    margin-left: 380px;
+    margin-left: 100px;
     color: red;
-    font-size: 30px;
+    font-size: 10px;
     text-align: center;
-    padding-top: 20px;
-}
+    padding-top: 5px;
+  }
 
-#LightGray2{
+  #LightGray2 {
     background-color: lightgray;
-    max-width: 400px;
+    max-width: 120px;
     width: 100%;
-    max-height: 40px;
+    max-height: 17px;
     height: 100%;
     border-radius: 25px;
-    margin-top: 12px;
-    margin-left: 380px;
-    padding-top: 10px;
-}
+    margin-top: 2px;
+    margin-left: 100px;
+    padding-top: 0px;
+  }
 
-#LightGray3{
-    background-color: lightgray;
-    max-width: 400px;
+  #slider {
+    max-width: 90px;
     width: 100%;
-    max-height: 50px;
+    max-height: 3px;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+
+  #LightGray3 {
+    background-color: lightgray;
+    max-width: 120px;
+    width: 100%;
+    max-height: 12px;
     height: 100%;
     border-radius: 25px;
-    margin-top: 12px;
-    margin-left: 380px;
+    margin-top: -18px;
+    margin-left: 100px;
     color: red;
-    font-size: 15px;
+    font-size: 5px;
     text-align: center;
-}
+  }
 
-#slider{
-    max-width: 300px;
-    width: 100%;
-    margin-left: 50px;
-    background-color: red;
-}
-
-#ButtonStart{
+  #ButtonStart {
     position: absolute;
     background-color: rgb(112, 110, 110);
-    max-width: 100px;
+    max-width: 30px;
     width: 100%;
-    max-height: 30px;
+    max-height: 10px;
     height: 100%;
-    border-radius: 25px;
-    margin-top: 40px;
-    margin-left: 265px;
-}
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 90px;
+  }
 
-#ButtonSelect{
+  #ButtonSelect {
     position: absolute;
     background-color: rgb(112, 110, 110);
-    max-width: 100px;
+    max-width: 30px;
     width: 100%;
-    max-height: 30px;
+    max-height: 10px;
     height: 100%;
-    border-radius: 25px;
-    margin-top: 40px;
-    margin-left: 35px;
-}
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 
-#ButtonUp{
+  #ButtonUp {
     margin: auto;
-    margin-top: 8px;
+    margin-top: 4px;
     border: 1px black solid;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-}
+  }
 
-#GraySpace{
-    max-width: 70px;
+  #GraySpace {
+    max-width: 25px;
     width: 100%;
-    max-height: 70px;
+    max-height: 25px;
     height: 100%;
-    margin-left: 130px;
-    margin-top: -168px;
+    margin-left: 35px;
+    margin-top: -30px;
     background-color: rgb(48, 48, 48);
     border: 1px black solid;
-}
+  }
 
-#ButtonDown{
+  #ButtonDown {
     margin: auto;
-    margin-top: 8px;
+    margin-top: 4px;
     border: 1px black solid;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-}
+  }
 
-#ButtonLeft{
+  #ButtonLeft {
     margin: auto;
-    margin-top: 8px;
+    margin-top: 4px;
     border: 1px black solid;
     border-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-}
+  }
 
-#ButtonRight{
+  #ButtonRight {
     margin: auto;
-    margin-top: 8px;
+    margin-top: 4px;
     border: 1px black solid;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-}
+  }
 
-.WhiteBox{
-    position:absolute;
-    max-width: 100px;
+  .WhiteBox {
+    max-width: 20px;
     width: 100%;
-    max-height: 100px;
+    max-height: 20px;
     height: 100%;
     background-color: white;
-    margin-left: 1000px;
-    margin-top: 230px;
+    margin-left: 280px;
+    margin-top: 50px;
     border-radius: 10px;
-    padding: 5px;
-}
+  }
 
-.WhiteBoxB{
-    position:absolute;
-    max-width: 100px;
+  .WhiteBoxB {
+    position: absolute;
+    max-width: 20px;
     width: 100%;
-    max-height: 100px;
+    max-height: 20px;
     height: 100%;
     background-color: white;
-    margin-left: 860px;
-    margin-top: 230px;
+    margin-left: 240px;
+    margin-top: 50px;
     border-radius: 10px;
     padding: 5px;
-}
+  }
 
-.WhiteBoxC{
+  .WhiteBoxC {
     background-color: white;
-    max-width: 400px;
+    max-width: 130px;
     width: 100%;
-    max-height: 112px;
+    max-height: 30px;
     height: 100%;
     border-radius: 25px;
-    margin-top: 40px;
-    margin-left: 380px;
-}
+    margin-top: 2px;
+    margin-left: 95px;
+  }
 
-.RedDot{
+  .RedDot {
     max-width: 80px;
     width: 100%;
     max-height: 80px;
     height: 100%;
-    margin-left: 8.5px;
-    margin-top: 10px;
+    margin-left: -0.5px;
+    margin-top: -1px;
     background-color: red;
     border-radius: 50%;
     border: 1px black solid;
-}
+  }
 
-.GrayDot{
-    max-width: 50px;
+  .GrayDot {
+    max-width: 15px;
     width: 100%;
-    max-height: 50px;
+    max-height: 15px;
     height: 100%;
     border-radius: 50%;
     background-color: gray;
-}
+  }
 
-.GrayBox1{
-    position: absolute;
-    max-width: 70px;
+  .GrayBox1 {
+    max-width: 25px;
     width: 100%;
-    max-height: 70px;
+    max-height: 25px;
     height: 100%;
-    margin-left: 130px;
-    margin-top: -240px;
+    margin-left: 35px;
+    margin-top: -57px;
     background-color: rgb(48, 48, 48);
     border: 1px black solid;
     border-radius: 15px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-}
+  }
 
-.GrayBox2{
-    position: absolute;
-    max-width: 70px;
+  .GrayBox2 {
+    max-width: 25px;
     width: 100%;
-    max-height: 70px;
+    max-height: 25px;
     height: 100%;
-    margin-left: 130px;
+    margin-left: 35px;
+    margin-top: 0px;
     background-color: rgb(48, 48, 48);
     border: 1px black solid;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-}
+  }
 
-.GrayBox3{
-    max-width: 70px;
+  .GrayBox3 {
+    max-width: 25px;
     width: 100%;
-    max-height: 70px;
+    max-height: 25px;
     height: 100%;
-    margin-left: 58px;
-    margin-top: -72px;
+    margin-left: 8px;
+    margin-top: -27px;
     background-color: rgb(48, 48, 48);
     border: 1px black solid;
     border-radius: 15px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-}
+  }
 
-.GrayBox4{
-    max-width: 70px;
+  .GrayBox4 {
+    max-width: 25px;
     width: 100%;
-    max-height: 70px;
+    max-height: 25px;
     height: 100%;
-    margin-left: 202px;
-    margin-top: -72px;
+    margin-left: 62px;
+    margin-top: -27px;
     background-color: rgb(48, 48, 48);
     border: 1px black solid;
     border-radius: 15px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+  }
 }
-
-@media screen and (max-width: 1280px){
-
-    *{
-        max-width: 375px;
-        padding: 0px;
-        margin: auto;
-        margin-top: 20px;
-    }
-    
-    #Container{
-        max-width: 355px;
-        width: 100%;
-        height: 160px;
-        margin:auto;
-        margin-left: auto;
-        background-color: rgb(242, 242, 242);
-        border-radius: 30px;
-        border: 1px black solid;
-        touch-action: manipulation;
-    }
-    
-    #GrayBox{
-        max-width: 320px;
-        width: 100%;
-        max-height: 110px;
-        height: 100%;
-        margin-left: 17.5px;
-        margin-top: 40px;
-        border-radius: 30px;
-        background-color: rgb(112, 110, 110);
-    }
-    
-    #ButtonA{
-        max-width: 100%;
-        margin: auto;
-        margin-left: 4.5px;
-        margin-top: 0px;
-        font-size: 15px;
-    }
-    
-    #ButtonB{
-        max-width: 100%;
-        margin: auto;
-        margin-left: 4.5px;
-        margin-top: 0px;
-        font-size: 15px;
-    }
-    
-    #LightGray1{
-        background-color: lightgray;
-        max-width: 120px;
-        width: 100%;
-        max-height: 10px;
-        height: 100%;
-        border-radius: 25px;
-        border-top-right-radius: 0px;
-        border-top-left-radius: 0px;
-        margin-left: 100px;
-        color: red;
-        font-size: 10px;
-        text-align: center;
-        padding-top: 5px;
-    }
-    
-    #LightGray2{
-        background-color: lightgray;
-        max-width: 120px;
-        width: 100%;
-        max-height: 17px;
-        height: 100%;
-        border-radius: 25px;
-        margin-top: 2px;
-        margin-left: 100px;
-        padding-top: 0px;
-    }
-
-    #slider{
-        max-width: 90px;
-        width: 100%;
-        max-height: 3px;
-        height: 100%;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
-    
-    #LightGray3{
-        background-color: lightgray;
-        max-width: 120px;
-        width: 100%;
-        max-height: 12px;
-        height: 100%;
-        border-radius: 25px;
-        margin-top: -18px;
-        margin-left: 100px;
-        color: red;
-        font-size: 5px;
-        text-align: center;
-    }
-    
-    #ButtonStart{
-        position: absolute;
-        background-color: rgb(112, 110, 110);
-        max-width: 30px;
-        width: 100%;
-        max-height: 10px;
-        height: 100%;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-left: 90px;
-    }
-    
-
-    #ButtonSelect{
-        position: absolute;
-        background-color: rgb(112, 110, 110);
-        max-width: 30px;
-        width: 100%;
-        max-height: 10px;
-        height: 100%;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    
-    #ButtonUp{
-        margin: auto;
-        margin-top: 4px;
-        border: 1px black solid;
-        border-radius: 15px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    #GraySpace{
-        max-width: 25px;
-        width: 100%;
-        max-height: 25px;
-        height: 100%;
-        margin-left: 35px;
-        margin-top: -30px;
-        background-color: rgb(48, 48, 48);
-        border: 1px black solid;
-    }
-    
-    #ButtonDown{
-        margin: auto;
-        margin-top: 4px;
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-    }
-    
-    #ButtonLeft{
-        margin: auto;
-        margin-top: 4px;
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    #ButtonRight{
-        margin: auto;
-        margin-top: 4px;
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-    
-    .WhiteBox{
-        max-width: 20px;
-        width: 100%;
-        max-height: 20px;
-        height: 100%;
-        background-color: white;
-        margin-left: 280px;
-        margin-top: 50px;
-        border-radius: 10px;
-
-    }
-    
-    .WhiteBoxB{
-        position:absolute;
-        max-width: 20px;
-        width: 100%;
-        max-height: 20px;
-        height: 100%;
-        background-color: white;
-        margin-left: 240px;
-        margin-top: 50px;
-        border-radius: 10px;
-        padding: 5px;
-    }
-    
-    .WhiteBoxC{
-        background-color: white;
-        max-width: 130px;
-        width: 100%;
-        max-height: 30px;
-        height: 100%;
-        border-radius: 25px;
-        margin-top: 2px;
-        margin-left: 95px;
-    }
-    
-    .RedDot{
-        max-width: 80px;
-        width: 100%;
-        max-height: 80px;
-        height: 100%;
-        margin-left: -0.5px;
-        margin-top: -1px;
-        background-color: red;
-        border-radius: 50%;
-        border: 1px black solid;
-    }
-    
-    .GrayDot{
-        max-width: 15px;
-        width: 100%;
-        max-height: 15px;
-        height: 100%;
-        border-radius: 50%;
-        background-color: gray;
-    }
-    
-    .GrayBox1{
-        max-width: 25px;
-        width: 100%;
-        max-height: 25px;
-        height: 100%;
-        margin-left: 35px;
-        margin-top: -57px;
-        background-color: rgb(48, 48, 48);
-        border: 1px black solid;
-        border-radius: 15px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    .GrayBox2{
-        max-width: 25px;
-        width: 100%;
-        max-height: 25px;
-        height: 100%;
-        margin-left: 35px;
-        margin-top: 0px;
-        background-color: rgb(48, 48, 48);
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-    }
-    
-    .GrayBox3{
-        max-width: 25px;
-        width: 100%;
-        max-height: 25px;
-        height: 100%;
-        margin-left: 8px;
-        margin-top: -27px;
-        background-color: rgb(48, 48, 48);
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    .GrayBox4{
-        max-width: 25px;
-        width: 100%;
-        max-height: 25px;
-        height: 100%;
-        margin-left: 62px;
-        margin-top: -27px;
-        background-color: rgb(48, 48, 48);
-        border: 1px black solid;
-        border-radius: 15px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-
-}
-    

@@ -13,10 +13,8 @@ const wss = new WebSocket.Server({
 require("events").EventEmitter.defaultMaxListeners = 4;
 
 wss.on("connection", (ws) => {
-  console.log(ws)
-  ws.on("message", (t) => {
-    const data = JSON.parse(t);
-    // console.log(`player ${data.player} has pressed ${data.input}`);
+  ws.on("message", (event) => {
+    const data = JSON.parse(event);
     encoder(data);
   });
 });

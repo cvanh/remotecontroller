@@ -28,32 +28,18 @@ const ButtonUp = document.getElementById("ButtonUp");
 const ButtonDown = document.getElementById("ButtonDown");
 const ButtonLeft = document.getElementById("ButtonLeft");
 const ButtonRight = document.getElementById("ButtonRight");
-
 const Button = document.querySelectorAll(".Button");
-
 const ButtonPlayerSelector = document.getElementById("slider");
 
-// add a event listner to all the elements with the class button and on click on such element make it send data
-// for (let i = 0; i < Button.length; i++) {
-// 	Button[i].addEventListener("mousedown", (e) => {
-// 		console.log(parseInt(ButtonPlayerSelector.value) + 1)
-// 		const WsData = {
-// 			"player": parseInt(ButtonPlayerSelector.value) + 1,
-// 			"input": Button[i].id
-// 		}
-// 		// console.log(JSON.stringify(WsData))
-// 		ws.send(JSON.stringify(WsData))
-// 	});
-// };
+//variables
+const player = parseInt(ButtonPlayerSelector.value + 1);
 
-for (let i = 0; i < Button.length; i++) {
-  Button[i].addEventListener("click", (e) => {
-    let player = parseInt(ButtonPlayerSelector.value) + 1;
-    console.log(player);
+Button.forEach((button_data) => {
+  button_data.addEventListener("click", (e) => {
     const wsData = {
       player: player,
-      input: Button[i].id,
+      input: button_data.id,
     };
     ws.send(JSON.stringify(wsData));
   });
-}
+});

@@ -12,18 +12,8 @@ const posInputs = {
 };
 
 function encoder(data) {
-  console.log(input)
-  
-  if (data.player == 1) {
-    for (input in posInputs) {
-      if (data.input == input) {
-        console.log(
-          `the player pressed ${posInputs[input]} which corresponds to ${input}`
-        );
-        robot.keyTap(posInputs[input]);
-        break;
-      }
-    }
+  if (data && data.player) {
+    console.log(`${data.player} pressed ${data.input}`);
   }
 }
 
