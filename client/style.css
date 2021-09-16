@@ -341,11 +341,12 @@
         background-color: lightgray;
         max-width: 120px;
         width: 100%;
-        max-height: 7px;
+        max-height: 17px;
         height: 100%;
         border-radius: 25px;
-        margin-top: 7px;
+        margin-top: 2px;
         margin-left: 100px;
+        padding-top: 0px;
     }
 
     #slider{
@@ -353,7 +354,8 @@
         width: 100%;
         max-height: 3px;
         height: 100%;
-        margin-left: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
     }
     
     #LightGray3{
@@ -363,7 +365,7 @@
         max-height: 12px;
         height: 100%;
         border-radius: 25px;
-        margin-top: 10px;
+        margin-top: -18px;
         margin-left: 100px;
         color: red;
         font-size: 5px;
@@ -410,7 +412,7 @@
         max-height: 25px;
         height: 100%;
         margin-left: 35px;
-        margin-top: -60px;
+        margin-top: -30px;
         background-color: rgb(48, 48, 48);
         border: 1px black solid;
     }
@@ -474,7 +476,7 @@
         max-height: 30px;
         height: 100%;
         border-radius: 25px;
-        margin-top: 1px;
+        margin-top: 2px;
         margin-left: 95px;
     }
     
@@ -505,7 +507,7 @@
         max-height: 25px;
         height: 100%;
         margin-left: 35px;
-        margin-top: -87px;
+        margin-top: -57px;
         background-color: rgb(48, 48, 48);
         border: 1px black solid;
         border-radius: 15px;
@@ -519,7 +521,7 @@
         max-height: 25px;
         height: 100%;
         margin-left: 35px;
-        margin-top: -1px;
+        margin-top: 0px;
         background-color: rgb(48, 48, 48);
         border: 1px black solid;
         border-radius: 15px;
@@ -546,7 +548,7 @@
         width: 100%;
         max-height: 25px;
         height: 100%;
-        margin-left: 61px;
+        margin-left: 62px;
         margin-top: -27px;
         background-color: rgb(48, 48, 48);
         border: 1px black solid;
