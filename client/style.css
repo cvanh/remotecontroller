@@ -8,10 +8,10 @@
     width: 100%;
     height: 560px;
     margin: auto;
+    margin-top: 20px;
     background-color: rgb(242, 242, 242);
     border-radius: 30px;
     border: 1px black solid;
-
     touch-action: manipulation
 }
 
@@ -282,7 +282,7 @@
     *{
         max-width: 375px;
         padding: 0px;
-        margin: 0px;
+        margin: auto;
         margin-top: 20px;
     }
     
@@ -290,10 +290,12 @@
         max-width: 355px;
         width: 100%;
         height: 160px;
+        margin:auto;
         margin-left: auto;
         background-color: rgb(242, 242, 242);
         border-radius: 30px;
         border: 1px black solid;
+        touch-action: manipulation;
     }
     
     #GrayBox{

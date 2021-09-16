@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div id="LightGray1"> &nbsp;P1 &nbsp; &nbsp; &nbsp;P2 &nbsp; &nbsp; &nbsp; P3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P4</div>
+            <div id="LightGray1"> &nbsp;P1 &nbsp; &nbsp; &nbsp;P2 &nbsp; &nbsp; &nbsp; P3 &nbsp;&nbsp;&nbsp;&nbsp;P4</div>
             <div id="LightGray2">
                 <input id="slider" class="Button" type="range" step="1" min="0" max="3"></input>
             </div>
@@ -60,7 +60,31 @@
         </div>
     </div>
     
+    <script>
+      
+    const GrayButton = document.getElementById("ButtonStart")
 
+    GrayButton.addEventListener("click",()=>{
+    
+        GrayButton.style.backgroundColor = "red";
+    
+        setTimeout(function(){
+            GrayButton.style.background = "gray";
+        },1000)
+    })      
+
+    const GrayButton1 = document.getElementById("ButtonSelect")
+
+    GrayButton1.addEventListener("click",()=>{
+    
+        GrayButton1.style.backgroundColor = "red";
+    
+        setTimeout(function(){
+            GrayButton1.style.background = "gray";
+        },1000)
+    })      
+    
+    </script>
     <script src="./main.js"></script>
 </body>
-</html>
+</html> 
