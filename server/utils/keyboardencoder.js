@@ -178,7 +178,7 @@ const keyboardbindings = {
     ButtonUp: 'y',
     ButtonDown: 't',
     ButtonLeft: 'u',
-    ButtonRight: 'i'
+    ButtonRight: '!'
   },
   2:{
     ButtonA: 'o',
@@ -222,7 +222,7 @@ function KeyboardEncoder(data){
   console.log(KeyToBePressed)
   // the if makes shure there are valid keypresses
   if(KeyToBePressed != undefined){
-  // robot.keyTap(KeyToBePressed)
+  robot.keyTap(KeyToBePressed)
   }
 }
 
