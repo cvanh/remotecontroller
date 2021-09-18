@@ -14,7 +14,7 @@ const ip = prompt('what is your servers ip?')
 
 
 // change the ip to ther current network ip
-ws = new WebSocket(`ws://${ip}:7072`);
+ws = new WebSocket('ws://'+ip +':7072');
 
 // declares all the button seems to break when not present
 // the right 2 buttons
