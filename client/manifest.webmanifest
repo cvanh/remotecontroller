@@ -12,6 +12,12 @@
         "src": "icons/512x512.png",
         "sizes": "512x512",
         "type": "image/png"
+      },
+      {
+        "src": "icons/960x960.png",
+        "sizes": "960x960",
+        "type": "image/png",
+        "purpose": "any maskable"
       }
     ],
     "start_url": "/client/index.html",
