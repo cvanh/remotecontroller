@@ -11,10 +11,11 @@ dpad right
 
 */
 const ip = prompt('what is your servers ip?')
-
+const WebSocketURI = `ws://${ip}:7072`
 
 // change the ip to ther current network ip
-ws = new WebSocket('ws://'+ip +':7072');
+ws = new WebSocket(WebSocketURI);
+console.log(WebSocketURI)
 
 // declares all the button seems to break when not present
 // the right 2 buttons
