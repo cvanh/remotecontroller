@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Controller</title>
 </head>
+
 <body>
     <div id="Container">
         <div id="GrayBox">
@@ -17,7 +21,7 @@
                     </div>
                 </div>
             </div>
-                    
+
             <div class="WhiteBoxB">
                 <div class="RedDot">
                     <div id="ButtonB" class="Button">
@@ -25,7 +29,8 @@
                     </div>
                 </div>
             </div>
-            <div id="LightGray1"> &nbsp;P1 &nbsp; &nbsp; &nbsp;P2 &nbsp; &nbsp; &nbsp; P3 &nbsp;&nbsp;&nbsp;&nbsp;P4</div>
+            <div id="LightGray1"> &nbsp;P1 &nbsp; &nbsp; &nbsp;P2 &nbsp; &nbsp; &nbsp; P3 &nbsp;&nbsp;&nbsp;&nbsp;P4
+            </div>
             <div id="LightGray2">
                 <input id="slider" class="Button" type="range" step="1" min="0" max="3"></input>
             </div>
@@ -33,13 +38,13 @@
                 <h1 class="h1">Select &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Start</h1>
             </div>
 
-            <div class="WhiteBoxC"> 
+            <div class="WhiteBoxC">
                 <div id="ButtonSelect" class="Button">
                 </div>
                 <div id="ButtonStart" class="Button">
                 </div>
-            </div> 
-       
+            </div>
+
             <div class="GrayBox GrayBox1">
                 <div id="ButtonUp" class="Button GrayDot">
                 </div>
@@ -59,32 +64,48 @@
             </div>
         </div>
     </div>
-    
+
     <script>
-      
-    const GrayButton = document.getElementById("ButtonStart")
 
-    GrayButton.addEventListener("click",()=>{
-    
-        GrayButton.style.backgroundColor = "red";
-    
-        setTimeout(function(){
-            GrayButton.style.background = "gray";
-        },1000)
-    })      
+        const GrayButton = document.getElementById("ButtonStart")
 
-    const GrayButton1 = document.getElementById("ButtonSelect")
+        GrayButton.addEventListener("click", () => {
 
-    GrayButton1.addEventListener("click",()=>{
-    
-        GrayButton1.style.backgroundColor = "red";
-    
-        setTimeout(function(){
-            GrayButton1.style.background = "gray";
-        },1000)
-    })      
-    
+            GrayButton.style.backgroundColor = "red";
+
+            setTimeout(function () {
+                GrayButton.style.background = "gray";
+            }, 1000)
+        })
+
+        const GrayButton1 = document.getElementById("ButtonSelect")
+
+        GrayButton1.addEventListener("click", () => {
+
+            GrayButton1.style.backgroundColor = "red";
+
+            setTimeout(function () {
+                GrayButton1.style.background = "gray";
+            }, 1000)
+        })
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('Registered!');
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                }).catch(function (err) {
+                    console.log(err);
+                });
+            });
+        } else {
+            console.log('service worker is not supported');
+        }
     </script>
     <script src="./main.js"></script>
 </body>
-</html> 
+
+</html>

@@ -1,9 +1,14 @@
-const WebSocket = require("ws");
 const {KeyboardEncoder} = require('./utils')
+const { createServer } = require('https');
+const { readFileSync } = require('fs');
+const { WebSocketServer } =  require('ws');
 
-const wss = new WebSocket.Server({
-  port: 7072,
+const server = createServer({
+  cert: readFileSync('./certs/example.crt'),
+  key: readFileSync('./certs/example.key')
 });
+const wss = new WebSocketServer({ server });
+
 
 require("events").EventEmitter.defaultMaxListeners = 4;
 
@@ -14,5 +19,7 @@ wss.on("connection", (ws) => {
     KeyboardEncoder(data) // makes the keyboard click
   });
 });
+
+server.listen(7072);
 
 console.log('wss server started on port 7072')

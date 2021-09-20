@@ -10,9 +10,12 @@ dpad left
 dpad right
 
 */
+const ip = prompt('what is your servers ip?')
+const WebSocketURI = `ws://${ip}:7072`
 
 // change the ip to ther current network ip
-ws = new WebSocket('ws://10.52.7.164:7072');
+ws = new WebSocket(WebSocketURI);
+console.log(WebSocketURI)
 
 // declares all the button seems to break when not present
 // the right 2 buttons
@@ -44,3 +47,13 @@ for (let i = 0; i < Button.length; i++) {
         ws.send(JSON.stringify(WsData))
     });
 };
+
+self.addEventListener('install', function() {
+    console.log('Install!');
+  });
+  self.addEventListener("activate", event => {
+    console.log('Activate!');
+  });
+  self.addEventListener('fetch', function(event) {
+    console.log('Fetch!', event.request);
+  });
