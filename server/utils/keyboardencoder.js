@@ -222,7 +222,7 @@ function KeyboardEncoder(data){
   console.log(KeyToBePressed)
   // the if makes shure there are valid keypresses
   if(KeyToBePressed != undefined){
-  robot.keyTap(KeyToBePressed)
+  // robot.keyTap(KeyToBePressed)
   }
 }
 
