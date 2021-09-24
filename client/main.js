@@ -12,14 +12,12 @@ dpad right
 */
 const ip = prompt('what is your servers ip?')
 const WebSocketURI = `ws://${ip}:7072`
-let $;
+console.log(WebSocketURI)
 
 // change the ip to ther current network ip
-if(WebSocketURI.length = 10){
-  console.log('b')
-$: ws = new WebSocket(WebSocketURI);
+ws = new WebSocket('ws://10.52.7.164:7072');
 console.log(WebSocketURI)
-}
+
 // declares all the button seems to break when not present
 // the right 2 buttons
 const ButtonA = document.getElementById('ButtonA')
