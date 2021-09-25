@@ -15,7 +15,7 @@ const WebSocketURI = `ws://${ip}:7072`
 console.log(WebSocketURI)
 
 // change the ip to ther current network ip
-ws = new WebSocket('ws://10.52.7.164:7072');
+ws = new WebSocket(WebSocketURI);
 console.log(WebSocketURI)
 
 // declares all the button seems to break when not present
