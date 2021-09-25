@@ -1,3 +1,4 @@
+// secure websocket connection please dont use this only if you know what you are doing
 // const {KeyboardEncoder} = require('./utils')
 // const { createServer } = require('https');
 // const { readFileSync } = require('fs');
@@ -32,6 +33,7 @@
 
 // console.log('wss server started on port 7072')
 
+// unsecure websocket connection
 const WebSocket = require("ws");
 const {KeyboardEncoder} = require('./utils')
 

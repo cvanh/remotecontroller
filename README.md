@@ -1,3 +1,6 @@
+# problems
+chrome wont work due to limitations of a self signed wss certificate
+ 
 # motivation
 play games together remote from 1000's of miles. 
 
@@ -48,5 +51,7 @@ node-gyp rebuild
 
 
 #wijze woorden
+mevrouw bosboom ik wil niet blijven zitten.
+mevrouw bosboom ik wil niet blijven zitten.
 mevrouw bosboom ik wil niet blijven zitten.
 dan gaan we er bij liggen!

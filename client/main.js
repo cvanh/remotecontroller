@@ -11,7 +11,7 @@ dpad right
 
 */
 const ip = prompt('what is your servers ip?')
-const WebSocketURI = `wss://${ip}:7072`
+const WebSocketURI = `ws://${ip}:7072`
 console.log(WebSocketURI)
 
 // change the ip to ther current network ip
